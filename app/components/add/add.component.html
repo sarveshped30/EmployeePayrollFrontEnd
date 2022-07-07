@@ -1,0 +1,130 @@
+<div class="container">
+
+    <form class="form" action="">
+        <div class="form-header">Employee Payroll From</div>
+
+        <div class="form-content">
+            
+            <!-- Creating name section in form -->
+            <mat-label>Name</mat-label>
+            <mat-form-field class="width ml" appearance="outline">
+                <input type="text" matInput>
+            </mat-form-field>
+
+            <br>
+            <br>
+
+            <!-- Creating profile image selection section in form -->
+            <mat-label>Profile image</mat-label>
+            <mat-radio-group class="profile-ml">
+                <mat-radio-button color="primary" value="assets/profile-images/Ellipse -1.png">
+                    <img class="profile" src="assets/profile-images/Ellipse -1.png" alt="1">
+                </mat-radio-button>
+
+                <mat-radio-button style="margin-left: 10px;" color="primary" value="assets/profile-images/Ellipse -2.png">
+                    <img class="profile" src="assets/profile-images/Ellipse -2.png" alt="2">
+                </mat-radio-button>
+
+                <mat-radio-button style="margin-left: 10px;" color="primary" value="assets/profile-images/Ellipse -3.png">
+                    <img class="profile" src="assets/profile-images/Ellipse -3.png" alt="3">
+                </mat-radio-button>
+
+                <mat-radio-button style="margin-left: 10px;" color="primary" value="assets/profile-images/Ellipse -4.png">
+                    <img class="profile" src="assets/profile-images/Ellipse -4.png" alt="4">
+                </mat-radio-button>
+            </mat-radio-group>
+
+            <br>
+            <br>
+            <br>
+
+            <!-- Creating gender selection section -->
+
+            <mat-label>Gender</mat-label>
+            <mat-radio-group class="Gender-ml">
+                <mat-radio-button color="primary" value="Male">
+                    <mat-label class="text">Male</mat-label>
+                </mat-radio-button>
+
+                <mat-radio-button style="margin-left: 33px;" color="primary" value="Female">
+                    <mat-label class="text">Female</mat-label>
+                </mat-radio-button>
+            </mat-radio-group>
+
+            <br>
+            <br>
+            <br>
+
+            <!-- Creating Department selection section -->
+        
+            <mat-label>Department</mat-label>
+            <mat-checkbox class="department-ml" color="primary" value="HR">
+                <mat-label>HR</mat-label>
+            </mat-checkbox>
+
+            <mat-checkbox style="margin-left: 20px;" color="primary" value="Sales">
+                <mat-label>Sales</mat-label>
+            </mat-checkbox>
+
+            <mat-checkbox style="margin-left: 20px;" color="primary" value="Finance">
+                <mat-label>Finance</mat-label>
+            </mat-checkbox>
+
+            <mat-checkbox style="margin-left: 20px;" color="primary" value="Engineer">
+                <mat-label>Engineer</mat-label>
+            </mat-checkbox>
+
+            <mat-checkbox style="margin-left: 20px;" color="primary" value="Other">
+                <mat-label>Other</mat-label>
+            </mat-checkbox>
+        </div>
+
+        <br>
+        <br>
+
+        <!-- Creating salary selection section -->
+
+        <mat-label>Salary</mat-label>
+        <mat-slider
+                color="primary"
+                class="salary-ml"
+                thumbLabel
+                [displayWith]="formatLabel"
+                tickInterval="1000"
+                step="1000"
+                min="1000"
+                max="100000">
+        </mat-slider>
+
+        <br>
+        <br>
+
+        <!-- Creating Start date selection section -->
+
+        <mat-label>Start Date</mat-label>
+        
+        <br>
+        <br>
+
+        <!-- Creating Note section -->
+
+        <mat-label>Note</mat-label>
+        <mat-form-field class="Note-ml" appearance="outline">
+            <textarea matInput class="input" style="height:40px" ></textarea>
+        </mat-form-field>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="button-flex">
+            <button class="cancel" color="primary" mat-raised-button>Cancel</button>
+
+            <div class="right-buttons">
+                <button class="submit" type="submit" color="primary" mat-raised-button>Submit</button>
+                <button class="reset" type="reset" color="accent" mat-raised-button >Reset</button>
+            </div>
+
+        </div>
+    </form>
+</div>

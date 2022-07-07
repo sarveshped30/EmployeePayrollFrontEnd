@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.employee {
+    font: normal normal bold 20px/25px Montserrat;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0px;
+    color: #82a70c;
+    text-transform: capitalize;
+}
+
+.payroll {
+    font: normal normal bold 20px/25px Montserrat;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    color: #42515F;
+    padding-top: 0px;;
+}
+
+.title-container {
+    top: 32px;
+    left: 246px;
+    width: 127px;
+    height: 52px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal bold 22px/25px Montserrat;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    opacity: 1;
+
+}
+
+
+.mt {
+    margin-left: 188px;
+}
+
+img {
+    top: 35px;
+    left: 188px;
+    width: 50px;
+    height: 47px;
+    /* UI Properties */
+    /* border: 1px solid #42515F; */
+    opacity: 1;
+}
+
+.bg-color {
+    background-color: #FFFF;
+}
