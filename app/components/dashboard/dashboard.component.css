@@ -4,6 +4,7 @@
     min-height: calc(100vh - 600px);
     padding: 30px 0 10px;
     box-sizing: border-box;
+    justify-content: center;
 }
 
 img {
@@ -44,4 +45,109 @@ img {
     opacity: 1;
     width: 63%;
 }
+
+.table{
+    margin-top: 40px;
+    margin-left: 0px;
+    width: 74%;
+    height: 40px;
+    /* UI Properties */
+    background: #42515F 0% 0% no-repeat padding-box;
+    border-radius: 3px 3px 0px 0px;
+    opacity: 1
+}
+
+th {
+    color: white;
+}
+
+.main-table {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.content-table {
+    margin-left: 0px;
+    margin-bottom: 1px;
+    width: 74%;
+    height: 40px;
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid #d4d1d1;
+    opacity: 1;
+}
+
+.row-border{
+   
+}
+
+.profile-image {
+    margin-left: 5px;
+    width: 5px;
+    height: 26px
+}
+
+.name {
+    text-align: left;
+    margin-left: 10px;
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #3D3D3D;
+    opacity: 1;
+}
+
+.department {
+    text-align: left;
+    font: normal normal normal 14px/19px Roboto;
+    letter-spacing: 0px;
+    color: #3D3D3D;
+    text-transform: capitalize;
+    opacity: 1;
+
+}
+
+.gender {
+    margin-left: 50px;
+    text-align: left;
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #3D3D3D;
+    opacity: 1;
+}
+
+.salary{
+    text-align: left;
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #3D3D3D;
+    opacity: 1
+}
+
+.date {
+    text-align: left;
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #3D3D3D;
+    opacity: 1;
+}
+
+.delete {
+    opacity: 1;
+}
+
+.edit {
+    
+    opacity: 1;
+}
+
+.align {
+    display: flex;
+    justify-content: row;
+} 
+
+
 

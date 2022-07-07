@@ -8,5 +8,30 @@
         </div>
     </div>
 
-
-</div>
+    
+    <div class="main-table">
+        <table class="table">
+                <tr>
+                    <th>NAME</th>
+                    <th>GENDER</th>
+                    <th>DEPARTMENT</th>
+                    <th>SALARY</th>
+                    <th>START DATE</th>
+                    <th>ACTIONS</th>
+                </tr>
+        </table>
+        <table class="content-table">
+            <tr *ngFor="let employee of employees;" >
+                <td class="profile-image"><img src={{employee.image}} alt=""></td>
+                <td class="name">{{employee.name}}</td>
+                <td class="gender">{{employee.gender}}</td>
+                <td class="departent">{{employee.department}}</td>
+                <td class="salary">{{employee.salary}}</td>
+                <td class="date">{{employee.startDate}}</td>
+                <td>
+                    <img class="delete" src="../assets/icons/delete-black-18dp.svg" alt="delete">
+                    <img class="edit" src="../assets/icons/create-black-18dp.svg" alt="edit">
+                </td>
+            </tr>
+        </table>
+    </div>

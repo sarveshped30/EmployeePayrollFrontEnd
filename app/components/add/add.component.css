@@ -87,15 +87,21 @@ mat-slider {
 
 .cancel {
     text-align: center;
-    margin-left: 60px;
+    margin-left: 100px;
+    color: #42515F;
+    background-color: #F7F7F7;
 }
 
 .reset {
     margin-right: 50px;
+    color: #42515F;
+    background-color: #F7F7F7;
 }
 
 .submit {
     margin-right: 20px;
+    background-color: #82a70c;
+    color: #F7F7F7;
 }
 
 
