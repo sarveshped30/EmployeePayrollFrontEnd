@@ -19,4 +19,14 @@ export class EmployeeService {
     return this.employee;
   }
 
-}
+  deleteEmployee(empName: string) {
+    this.employee.forEach(emp => {
+      if(emp.name == empName) {
+          let index = this.employee.indexOf(emp);
+          this.employee.splice(index,1);
+      }
+    });
+  }
+
+
+  }

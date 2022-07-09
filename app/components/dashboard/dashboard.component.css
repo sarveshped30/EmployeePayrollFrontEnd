@@ -98,41 +98,46 @@ th {
     letter-spacing: 0px;
     color: #3D3D3D;
     opacity: 1;
+    width: 26%;
 }
 
 .department {
-    text-align: left;
+    text-align: center;
     font: normal normal normal 14px/19px Roboto;
     letter-spacing: 0px;
     color: #3D3D3D;
     text-transform: capitalize;
     opacity: 1;
+    width: 15%;
 
 }
 
 .gender {
     margin-left: 50px;
-    text-align: left;
+    text-align: center;
     font: normal normal normal 16px/21px Roboto;
     letter-spacing: 0px;
     color: #3D3D3D;
     opacity: 1;
+    width: 7%;
 }
 
 .salary{
-    text-align: left;
-    font: normal normal normal 16px/21px Roboto;
-    letter-spacing: 0px;
-    color: #3D3D3D;
-    opacity: 1
-}
-
-.date {
-    text-align: left;
+    text-align: center;
     font: normal normal normal 16px/21px Roboto;
     letter-spacing: 0px;
     color: #3D3D3D;
     opacity: 1;
+    width: 15%;
+}
+
+.date {
+    text-align: center;
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #3D3D3D;
+    opacity: 1;
+    width: 14%;
 }
 
 .delete {
@@ -148,6 +153,34 @@ th {
     display: flex;
     justify-content: row;
 } 
+
+.actions {
+    text-align: right;
+}
+
+.H-name {
+    width: 30%;
+}
+
+.H-gender {
+    width: 7%;
+}
+
+.H-department {
+    width: 15%;
+}
+
+.H-salary {
+    width: 12%;
+}
+
+.H-date {
+    width: 15%;
+}
+
+.H-actions {
+    width: 15%;
+}
 
 
 

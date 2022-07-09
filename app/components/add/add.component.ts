@@ -27,7 +27,4 @@ export class AddComponent implements OnInit {
     this.service.addEmployee(employee);
   }
 
-  // getEmployees() {
-  //   console.log(this.employee);
-  // }
 }

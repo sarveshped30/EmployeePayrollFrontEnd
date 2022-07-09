@@ -17,4 +17,9 @@ export class DashboardComponent implements OnInit {
     this.employees =  this.service.getEmployees();
   }
 
+  deleteEmployee(empName:string) {
+    this.service.deleteEmployee(empName);
+    console.log("deleted employee...");
+    this.ngOnInit();
+  }
 }
