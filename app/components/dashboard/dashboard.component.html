@@ -23,14 +23,18 @@
         <table class="content-table">
             <tr *ngFor="let employee of employees;" >
                 <td class="profile-image"><img src={{employee.image}} alt=""></td>
-                <td class="name">{{employee.name | uppercase}}</td>
+                <td class="name">{{employee.employeeName | uppercase}}</td>
                 <td class="gender">{{employee.gender | uppercase}}</td>
                 <td class="department">{{employee.department}}</td>
                 <td class="salary">{{employee.salary | currency : 'INR'}}</td>
-                <td class="date">{{employee.startDate | date : 'dd MMMM yyyy'}}</td>
+                <td class="date">{{employee.date | date : 'dd MMMM yyyy'}}</td>
                 <td class="actions">
-                    <img class="delete" (click)="deleteEmployee(employee.name)" src="../assets/icons/delete-black-18dp.svg" alt="delete" >
-                    <img class="edit" src="../assets/icons/create-black-18dp.svg" alt="edit">
+                    <button mat-icon-button color="warn" (click)="deleteEmployee(employee.employeeId)">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                    <button mat-icon-button color="primary" (click)="editEmployee(employee)" >
+                        <mat-icon>edit</mat-icon>
+                    </button>
                 </td>
             </tr>
         </table>

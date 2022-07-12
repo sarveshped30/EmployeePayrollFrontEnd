@@ -81,9 +81,9 @@ th {
     opacity: 1;
 }
 
-.row-border{
+/* .row-border{
    
-}
+} */
 
 .profile-image {
     margin-left: 5px;
@@ -155,7 +155,7 @@ th {
 } 
 
 .actions {
-    text-align: right;
+    text-align: center;
 }
 
 .H-name {

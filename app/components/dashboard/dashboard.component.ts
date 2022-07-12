@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Employee } from 'src/app/model/employee';
 import { EmployeeService } from 'src/app/services/employee.service';
+import { AddComponent } from '../add/add.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,17 +11,35 @@ import { EmployeeService } from 'src/app/services/employee.service';
 })
 export class DashboardComponent implements OnInit {
 
-  employees:Employee[] = []
+  employees !: Employee[]
 
-  constructor(private service:EmployeeService) { }
+  constructor(private service:EmployeeService, private dialog: MatDialog) { }
 
   ngOnInit(): void {
-    this.employees =  this.service.getEmployees();
+    this.service.getEmployees().subscribe(response => {
+      this.employees = response.data;
+      console.log(this.employees);
+      
+    })
   }
 
-  deleteEmployee(empName:string) {
-    this.service.deleteEmployee(empName);
-    console.log("deleted employee...");
-    this.ngOnInit();
+  deleteEmployee(employeeId: number) {
+    this.service.deleteEmployee(employeeId).subscribe(response => {
+      console.log(response)
+      this.ngOnInit();
+    })
   }
+
+  editEmployee(employee : any) {
+      const dialogRef = this.dialog.open(AddComponent, {
+      width:'60%',
+      height: '70%',
+      data:employee,
+    }).afterClosed().subscribe(val => {
+      if(val == 'update') {
+        this.ngOnInit();
+      }
+    })
+}
+
 }

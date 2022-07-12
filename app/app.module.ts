@@ -11,12 +11,16 @@ import {MatButtonModule} from '@angular/material/button';
 import { AddComponent } from './components/add/add.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDialogModule, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -40,8 +44,23 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatSliderModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatIconModule,
+    MatDialogModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: MAT_DIALOG_DATA,
+      useValue: {}
+    },
+
+    {
+      provide: MatDialogRef,
+      useValue: {}
+    },
+  
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
